@@ -1,46 +1,11 @@
-// @use "/src/styles/variables";
-// @use "/src/styles/mixins";
-
-// body {
-//   margin: 1rem 7rem;
-//   padding: 0;
-//   box-sizing: border-box;
-// }
-
-// nav,
-// footer,
-// section {
-//   @include mixins.center;
-// }
-
-// nav {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// }
-
-// button {
-//   border: none;
-//   background-color: transparent;
-//   cursor: pointer;
-// }
-
-// time {
-//   @include mixins.alignRight;
-//   margin-bottom: 2rem;
-// }
-
-// footer {
-//   margin-top: 2rem;
-// }
-
-// body.dark {
-//   background-color: variables.$color-secondary;
-//   color: variables.$color-primary;
-// }
-
 @use "/src/styles/variables";
 @use "/src/styles/mixins";
+
+body {
+  margin: 1rem 7rem;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 nav,
 footer,
@@ -69,6 +34,11 @@ time {
   margin-bottom: 2rem;
 }
 
+li {
+  list-style: square;
+  text-align: left;
+}
+
 footer {
   margin-top: 2rem;
   font-size: 0.875rem;
@@ -89,6 +59,7 @@ body.dark {
 
   nav {
     flex-direction: row;
+    justify-content: space-between;
     gap: 1rem;
   }
 
