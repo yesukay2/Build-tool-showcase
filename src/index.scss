@@ -1,22 +1,60 @@
+// @use "/src/styles/variables";
+// @use "/src/styles/mixins";
+
+// body {
+//   margin: 1rem 7rem;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// nav,
+// footer,
+// section {
+//   @include mixins.center;
+// }
+
+// nav {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+// button {
+//   border: none;
+//   background-color: transparent;
+//   cursor: pointer;
+// }
+
+// time {
+//   @include mixins.alignRight;
+//   margin-bottom: 2rem;
+// }
+
+// footer {
+//   margin-top: 2rem;
+// }
+
+// body.dark {
+//   background-color: variables.$color-secondary;
+//   color: variables.$color-primary;
+// }
+
 @use "/src/styles/variables";
 @use "/src/styles/mixins";
-
-body {
-  margin: 1rem 7rem;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 nav,
 footer,
 section {
   @include mixins.center;
+  flex-direction: column;
+  text-align: center;
 }
 
 nav {
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 button {
@@ -27,14 +65,50 @@ button {
 
 time {
   @include mixins.alignRight;
+  width: 100%;
   margin-bottom: 2rem;
 }
 
 footer {
   margin-top: 2rem;
+  font-size: 0.875rem;
+  width: 100vw;
+  height: 3rem;
 }
 
 body.dark {
   background-color: variables.$color-secondary;
   color: variables.$color-primary;
+}
+
+/* ✅ Responsive Design */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 1rem;
+  }
+
+  nav {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  time {
+    justify-content: center;
+    font-size: 0.85rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  button img {
+    width: 20px;
+    height: 20px;
+  }
 }
