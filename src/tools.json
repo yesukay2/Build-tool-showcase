@@ -1,0 +1,33 @@
+{
+  "tools": [
+    "@babel/core",
+    "@babel/preset-env",
+    "@eslint/js",
+    "@typescript-eslint/eslint-plugin",
+    "@typescript-eslint/parser",
+    "babel-loader",
+    "css-loader",
+    "css-minimizer-webpack-plugin",
+    "eslint",
+    "eslint-config-prettier",
+    "eslint-plugin-prettier",
+    "globals",
+    "html-webpack-plugin",
+    "husky",
+    "mini-css-extract-plugin",
+    "prettier",
+    "sass",
+    "sass-loader",
+    "source-map-loader",
+    "style-loader",
+    "terser-webpack-plugin",
+    "ts-loader",
+    "typescript",
+    "typescript-eslint",
+    "webpack",
+    "webpack-cli",
+    "webpack-dev-server",
+    "webpack-merge",
+    "moment"
+  ]
+}
