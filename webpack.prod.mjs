@@ -7,7 +7,7 @@ export default merge(common, {
   mode: "production",
   devtool: "eval-source-map",
   optimization: {
-    splitChuncks: {
+    splitChunks: {
       chunks: "all",
       cacheGroups: {
         vendor: {
