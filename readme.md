@@ -21,8 +21,8 @@ This Angular-based project illustrates how to:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-username/angular-build-showcase.git
-   cd angular-build-showcase
+   git clone https://github.com/yesukay2/Build-tool-showcase.git
+   cd Build-tool-showcase
    ```
 
 2. Install dependencies - npm install
